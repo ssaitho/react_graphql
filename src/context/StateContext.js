@@ -23,9 +23,9 @@ const StateContextProvider = (props) => {
         setSelectedDept,
         editedId,
         setEditedId,
-        dataSingleEmployee,
-        errorSingleEmployee,
-        getSingleEmployee,
+        // dataSingleEmployee,
+        // errorSingleEmployee,
+        // getSingleEmployee,
       }}
     >
       {props.children}

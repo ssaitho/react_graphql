@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import styles from "./MainPage.module.css";
 import { useQuery } from "@apollo/react-hooks";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { GET_DEPTS, GET_EMPLOYEES } from "../queries";
 import { Grid } from "@material-ui/core";
 import jwtDecode from "jwt-decode";
-import EmployeeList from './EmployeeList';
+import EmployeeList from "./EmployeeList";
+import EmployeeCreate from "./EmployeeCreate";
 
 const MainPage = () => {
   const {
@@ -53,6 +54,7 @@ const MainPage = () => {
         />
       </h1>
 
+      <EmployeeCreate dataDepts={dataDepts} />
       <Grid container>
         <Grid item xs={5}>
           <EmployeeList dataEmployees={dataEmployees} />
@@ -61,7 +63,7 @@ const MainPage = () => {
         <Grid item xs={3}></Grid>
       </Grid>
     </div>
-  )
-}
+  );
+};
 
-export default MainPage
+export default MainPage;
