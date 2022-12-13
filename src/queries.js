@@ -85,3 +85,25 @@ export const UPDATE_EMPLOYEE = gql`
     }
   }
 `;
+export const DELETE_EMPLOYEE = gql`
+  mutation ($id: ID!) {
+    deleteEmployee(input: { id: $id }) {
+      employee {
+        id
+      }
+    }
+  }
+`;
+export const GET_SINGLE_EMPLOYEE = gql`
+  query ($id: ID!) {
+    employee(id: $id) {
+      id
+      name
+      joinYear
+      department {
+        id
+        deptName
+      }
+    }
+  }
+`;
