@@ -21,7 +21,7 @@ const EmployeeList = ({ dataEmployees }) => {
   });
   return (
     <>
-      <h3>Employee List</h3>
+      <h3>Employee List（社員一覧）</h3>
       <ul className={styles.employeeList__list}>
         {dataEmployees &&
           dataEmployees.allEmployees &&

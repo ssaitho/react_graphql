@@ -5,14 +5,14 @@ const EmployeeDetails = () => {
   if (errorSingleEmployee)
     return (
       <>
-        <h3>Employee Details</h3>
+        <h3>Employee Details（社員詳細）</h3>
         {errorSingleEmployee.message}
       </>
     );
 
   return (
     <>
-      <h3>Employee Details</h3>
+      <h3>Employee Details（社員詳細）</h3>
       {/* {errorSingleEmployee && errorSingleEmployee.message} */}
       {dataSingleEmployee && dataSingleEmployee.employee && (
         <>

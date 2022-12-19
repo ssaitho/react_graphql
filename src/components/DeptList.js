@@ -16,7 +16,7 @@ const DeptList = ({ dataDepts }) => {
   });
   return (
     <>
-      <h3>Department List</h3>
+      <h3>Department List（部署）</h3>
       <input
         className={styles.deptList__input}
         placeholdeer="new department name"
